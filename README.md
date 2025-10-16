@@ -26,8 +26,19 @@ I went with a Node.js backend, Vue.js frontend, PostgreSQL db stack. A large par
 4. Login with `hari.hara` and password `12345678`
 
 Stengths of this project:
-1. 100% event driven design
-     The reason for going with Js over, for Ex: python, was simply how intuitively it supports async/event driven programming. Every function call is asynchronous, utilizing Vue.js's capabilities such as reactive components, etc.
+1. 100% event driven design, async execution, resilient design
+     The reason for going with Js over, for Ex: python, was simply how intuitively it supports async/event driven programming. Every function call is asynchronous, utilizing Vue.js's capabilities such as reactive components, etc. Care has been taken to avoid any circular dependencies. Although it isn't visible at this stage, but everything from the naming of objects to use of components, placement of methods in classes, compliance with event driven design, etc. have been done to implement Domain Driven Design (DDD) principles such as ubiquitous language, domain inspired modelling, etc.
 2. 100% configurable front end structure
      All building blocks are separated into components, the code for the service layer is separated from the view layer, which is separated from configuration files, custom node definitions, etc. There is a generic node structure which custom nodes "extend" in a way. Every request/response is represented by schemas, the project is 100% typescript
-3. 100% scalable
+3. 100% scalable and extensible
+     The design has been chosen to be scalable from the start, including the use of components, allowing easy extension of nodes, allowing the addition of properties to nodes, the listing of nodes in the UI (Ex: simply create a new component in the components folder, it'll show up in the Components panel, extend the base node using it to avoid repititive boilerplate code, etc.). This is also seen by the use of tailwindcss for styling. At the backend, the use of routers and other Fastify features, including easy jwt authentication, allow for easy scaling
+4. UI with drag-and-drop, intuitive, simple interface
+5. API first architecture, easily implemented as dockerized micro services
+
+Weakness:
+1. Missing task executor, HITL system, retry/replay/pause system
+2. Nodes not fully implemented
+3. Slack/Gmain integration pending
+4. DB layer not implemented
+
+
