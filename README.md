@@ -46,5 +46,6 @@ Weakness:
 2. Nodes not fully implemented
 3. Slack/Gmail integration pending
 4. DB layer not implemented
+5. Could not push a deployable/lean version due to want of time
 
 
