@@ -17,11 +17,11 @@ PLANNED MODULES:
 
 I went with a Node.js backend, Vue.js frontend, PostgreSQL db stack. A large part of frontend has been implemented, but unfortunately the DB part hasn't been implemented at all. Thus, it's an incomplete project
 
-Why Js stack? - to not only enforce event driven async parallel design, but also ensure the code remains intuitive. Also it's one of the faster stacks since the project isn't graphics heavy.
-Why Vue.js? Easy reactive components mean that the code is easily manageable. Vue Flow provides an excellent and intuitive graph visualization tool. Finia provides easy and robust state management and seamless real-time integration with the Vue Flow element. Also personally it's simpler, I had a buggy experience with Next.js, etc. Vue's documentation is quiet good as well
-Why Fastify? Built in schema validation (used extensively) along with Ts (which works seamelessly with Fastify), etc. to ensure robustness and resilience, it's also faster than Express. It's jwt, cors, etc. "plugins" make development and code management extremely simple
-Why PostgreSQL? ACID compliance i.e. resilient especially because the project was planned with the pause-replay feature and error recovery was non negotiable, so stuck to ACID compliant solutions. It's JSONB datatype makes it simple to store unstructured data like the state, considering the node properties, outputs, etc. are dynamic.
-Why REDIS? For meta data and caching only, not for storing the state
+- Why Js stack? - to not only enforce event driven async parallel design, but also ensure the code remains intuitive. Also it's one of the faster stacks since the project isn't graphics heavy.
+- Why Vue.js? Easy reactive components mean that the code is easily manageable. Vue Flow provides an excellent and intuitive graph visualization tool. Finia provides easy and robust state management and seamless real-time integration with the Vue Flow element. Also personally it's simpler, I had a buggy experience with Next.js, etc. Vue's documentation is quiet good as well
+- Why Fastify? Built in schema validation (used extensively) along with Ts (which works seamelessly with Fastify), etc. to ensure robustness and resilience, it's also faster than Express. It's jwt, cors, etc. "plugins" make development and code management extremely simple
+- Why PostgreSQL? ACID compliance i.e. resilient especially because the project was planned with the pause-replay feature and error recovery was non negotiable, so stuck to ACID compliant solutions. It's JSONB datatype makes it simple to store unstructured data like the state, considering the node properties, outputs, etc. are dynamic.
+- Why REDIS? For meta data and caching only, not for storing the state
 
 
 ## How to run
