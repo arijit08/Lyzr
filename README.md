@@ -38,7 +38,7 @@ Stengths of this project:
 Weakness:
 1. Missing task executor, HITL system, retry/replay/pause system
 2. Nodes not fully implemented
-3. Slack/Gmain integration pending
+3. Slack/Gmail integration pending
 4. DB layer not implemented
 
 
