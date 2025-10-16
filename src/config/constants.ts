@@ -1,0 +1,14 @@
+
+// AUTHENTICATION
+export const AUTH_CONFIG = {
+    USERNAME_MIN_LENGTH: 5,
+    PASSWORD_MIN_LENGTH: 8,
+    USERNAME_MAX_LENGTH: 15,
+    PASSWORD_MAX_LENGTH: 20,
+    JWT_SECRET: process.env.JWT_SECRET || 'secret_code_for_pilot_purposes_27272727108'
+};
+
+export const WORKFLOW_CONFIG = {
+    WORKFLOW_ID_LENGTH: 15,
+}
+
