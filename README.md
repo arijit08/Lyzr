@@ -13,6 +13,9 @@ PLANNED MODULES:
 7. TASK RUNNER - NOT DONE
 8. HITL CAPABILITY - NOT DONE
 
+VIDEO WALKTHROUGH - https://drive.google.com/file/d/1uXGKMLKbgTEbpt7-sfcFXykJ4k8GQ-fJ/view?usp=sharing
+This video explains the same things that are present in this READ ME file, with examples (15 mins)
+
 ## Design decision making
 
 I went with a Node.js backend, Vue.js frontend, PostgreSQL db stack. A large part of frontend has been implemented, but unfortunately the DB part hasn't been implemented at all. Thus, it's an incomplete project
