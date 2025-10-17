@@ -14,7 +14,7 @@ PLANNED MODULES:
 8. HITL CAPABILITY - NOT DONE
 
 VIDEO WALKTHROUGH - https://drive.google.com/file/d/1ra6TlDHWQZixg2ril6HX9MYTxkvhFYpo/view?usp=sharing
-This video explains the same things that are present in this READ ME file, with examples (15 mins)
+
 
 ## Design decision making
 
